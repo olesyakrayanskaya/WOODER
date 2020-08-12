@@ -1,0 +1,140 @@
+.about {
+    background-color: #2eb398;
+
+    &__inner {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 1px;
+            height: 90%;
+            background-color: #219d84;
+            position: absolute;
+            top: 15px;
+        }
+
+        &::after {
+            content: "";
+            width: 1px;
+            height: 90%;
+            background-color: #219d84;
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 20px;
+    }
+
+    &__img {
+        width: 340px;
+        height: 380px;
+        object-fit: cover;
+        object-position: center;
+        clip-path: polygon(50% 0%, 100% 22%, 100% 78%, 50% 100%, 0 79%, 0 21%);
+
+        @media screen and (min-width: 3840px) {
+            width: 420px;
+            height: 460px;
+        }
+
+        @media screen and (min-width: 2560px) and (max-width: 3839px) {
+            width: 350px;
+            height: 390px;
+        }
+
+        @media screen and (min-width: 2048px) and (max-width: 2559px) {
+            width: 340px;
+            height: 380px;
+        }
+
+        @media screen and (min-width: 1800px) and (max-width: 2047px) {
+            width: 200px;
+            height: 220px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1799px) {
+            width: 150px;
+            height: 170px;
+        }
+
+        @media screen and (min-width: 720px) and (max-width: 1199px) {
+            width: 125px;
+            height: 130px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 719px) {
+            width: 80px;
+            height: 85px;
+        }
+
+        @media screen and (min-width: 335px) and (max-width: 479px) {
+            width: 55px;
+            height: 60px;
+        }
+
+        @media screen and (max-width: 334px) {
+            width: 45px;
+            height: 50px;
+        }
+    }
+
+    &__text {
+        padding-left: 20px;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 5px;
+        color: #d7fcf5;
+        font-weight: 400;
+        font-family: "MavenPro", sans-serif;
+
+        @media screen and (max-width: 334px) {
+            font-size: 25px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        color: #20816d;
+        font-weight: 400;
+        font-family: "MavenPro", sans-serif;
+
+        @media screen and (max-width: 334px) {
+            font-size: 15px;
+        }
+    }
+
+    &__paragraph {
+        font-size: 12px;
+        line-height: 22px;
+        color: #d7fcf5;
+        font-weight: 400;
+        font-family: "Lato", sans-serif;
+        margin-top: 20px;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 20px;
+        padding-bottom: 50px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
