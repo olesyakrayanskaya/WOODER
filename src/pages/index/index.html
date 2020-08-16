@@ -8,13 +8,186 @@
 </head>
 
 <body>
-    <header class="header"></header>
-    <section class="slider"></section>
-    <section class="products"></section>
-    <section class="quality"></section>
-    <section class="adv-video"></section>
-    <section class="about"></section>
-    <footer class="footer"></footer>
+    <header class="header">
+        <div class="header__menu menu">
+            <div class="menu__item"></div>
+            <div class="menu__item"></div>
+            <div class="menu__item"></div>
+            <span class="menu__text">menu</span>
+        </div>
+        <a href=""><img class="header__logo" src="../../src/assets/images/logo.png" alt=""></a>
+        <nav class="header__nav">
+            <a class="header__link" href="#">
+                <li class="header__li">home</li>
+            </a>
+            <a class="header__link" href="#">
+                <li class="header__li">products</li>
+            </a>
+            <a class="header__link" href="#">
+                <li class="header__li">about</li>
+            </a>
+        </nav>
+        <a href="#"><img class="header__info" src="../../src/assets/images/info.png"></a>
+        <select class="header__lang lang" name="language">
+            <option class="lang__option" value="english">en</option>
+            <option class="lang__option" value="russian">ru</option>
+        </select>
+    </header>
+    <section class="hero">
+        <h1 class="hero__title">wooder</h1>
+        <button class="hero__btn">learn more</button>
+        <img class="hero__mouse" src="../../src/assets/images/mouse.png" alt="">
+        <img class="hero__arr" src="../../src/assets/images/down-arrow.png" alt="">
+        <div class="hero__slider slider">
+            <div class="slider__item 1">
+                <img class="slider__img" src="../../src/assets/images/DSC_1007_2000.png" alt="">
+                <span class="slider__number">01</span>
+            </div>
+            <div class="slider__item 2">
+                <img class="slider__img"
+                    src="../../src/assets/images/boss-fight-free-stock-images-photography-photos-high-resolution-wood-pile.png"
+                    alt="">
+                <p class="slider__text">furniture & decore</p>
+                <img class="slider__share" src="../../src/assets/images/share.png" alt="">
+            </div>
+            <div class="slider__item 1">
+                <img class="slider__img" src="../../src/assets/images/DSC_1007_2000.png" alt="">
+                <span class="slider__number">01</span>
+            </div>
+            <div class="slider__item 2">
+                <img class="slider__img"
+                    src="../../src/assets/images/boss-fight-free-stock-images-photography-photos-high-resolution-wood-pile.png"
+                    alt="">
+                <p class="slider__text">furniture & decore</p>
+                <img class="slider__share" src="../../src/assets/images/share.png" alt="">
+            </div>
+            <div class="slider__item 1">
+                <img class="slider__img" src="../../src/assets/images/DSC_1007_2000.png" alt="">
+                <span class="slider__number">01</span>
+            </div>
+            <div class="slider__item 2">
+                <img class="slider__img"
+                    src="../../src/assets/images/boss-fight-free-stock-images-photography-photos-high-resolution-wood-pile.png"
+                    alt="">
+                <p class="slider__text">furniture & decore</p>
+                <img class="slider__share" src="../../src/assets/images/share.png" alt="">
+            </div>
+            <div class="slider__item 1">
+                <img class="slider__img" src="../../src/assets/images/DSC_1007_2000.png" alt="">
+                <span class="slider__number">01</span>
+            </div>
+            <div class="slider__item 2">
+                <img class="slider__img"
+                    src="../../src/assets/images/boss-fight-free-stock-images-photography-photos-high-resolution-wood-pile.png"
+                    alt="">
+                <p class="slider__text">furniture & decore</p>
+                <img class="slider__share" src="../../src/assets/images/share.png" alt="">
+            </div>
+            <div class="slider__item 1">
+                <img class="slider__img" src="../../src/assets/images/DSC_1007_2000.png" alt="">
+                <span class="slider__number">01</span>
+            </div>
+            <div class="slider__item 2">
+                <img class="slider__img"
+                    src="../../src/assets/images/boss-fight-free-stock-images-photography-photos-high-resolution-wood-pile.png"
+                    alt="">
+                <p class="slider__text">furniture & decore</p>
+                <img class="slider__share" src="../../src/assets/images/share.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__content wrap">
+            <div class="products__item_left">
+                <div class="products__text infobox_left">
+                    <h3 class="infobox__title">Furniture</h3>
+                    <p class="infobox__desc">Wooder utilizes materials otherwise left behind, rendered usele Lorem,
+                        ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="infobox__btn">learn more</button>
+                </div>
+                <img class="products__img" src="../../src/assets/images/furniture.png" alt="">
+                <span class="products__number">01</span>
+            </div>
+            <div class="products__item_right">
+                <div class="products__text infobox_right">
+                    <h3 class="infobox__title">Decor</h3>
+                    <p class="infobox__desc">We make all types of wooden decor as per design given by Archit Lorem,
+                        ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="infobox__btn">learn more</button>
+                </div>
+                <img class="products__img" src="../../src/assets/images/decore.png" alt="">
+                <span class="products__number">02</span>
+            </div>
+        </div>
+    </section>
+    <section class="quality">
+        <div class="quality__content wrap">
+            <h3 class="quality__title">wooder – is quality</h3>
+            <p class="quality__text">We create unique design objects made of rare wood, specially under the order. Look
+                at the short video about our work.</p>
+            <div class="quality__video">
+                <div class="quality__item video-block">
+                    <video class="video-block__vid" poster="../../src/assets/images/vid_poster1.png">
+                        <source src="">
+                    </video>
+                    <button class="video-block__btn">
+                        <img class="video-block__play" src="../../src/assets/images/play.png" alt="">
+                    </button>
+                    <h6 class="video-block__title">Innovative Design</h6>
+                </div>
+                <div class="quality__item video-block">
+                    <video class="video-block__vid" poster="../../src/assets/images/vid_poster2.png">
+                        <source src="">
+                    </video>
+                    <button class="video-block__btn">
+                        <img class="video-block__play" src="../../src/assets/images/play.png" alt="">
+                    </button>
+                    <h6 class="video-block__title">High-level Skills</h6>
+                </div>
+                <div class="quality__item video-block">
+                    <video class="video-block__vid" poster="../../src/assets/images/vid_poster3.png">
+                        <source src="">
+                    </video>
+                    <button class="video-block__btn">
+                        <img class="video-block__play" src="../../src/assets/images/play.png" alt="">
+                    </button>
+                    <h6 class="video-block__title">Quality Products </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-video">
+        <video class="info-video__video" poster="../../src/assets/images/info_video_poster.png">
+            <source src=""></video>
+        <img class="info-video__player" src="../../src/assets/images/info_video_player.png" alt="">
+        <div class="info-video__content">
+            <h3 class="info-video__title">we Do the design of any complexity</h3>
+            <p class="info-video__text">This is a team of professionals that make the furniture and wood décor high
+                standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with
+                love.</p>
+            <button class="info-video__btn">
+                <img class="info_video_play" src="../../src/assets/images/play.png" alt="">
+                watch video</button>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__item_left">
+            <div class="about__text infobox_left">
+                <h3 class="infobox__title">About us</h3>
+                <p class="infobox__desc">We are a team of professionals in the wood processing and the creation of
+                    wooden furniture of the highest class</p>
+                <button class="infobox__btn">learn more</button>
+            </div>
+            <img class="about__img" src="../../src/assets/images/about.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_content wrap">
+            <p class="footer__copyright">© 2016 WOODER</p>
+            <a href=""><img class="footer__logo" src="../../src/assets/images/logo.png" alt=""></a>
+            <p class="footer__info"><span class="footer__inf-span">Designed by</span> Viacheslav Olianishyn</p>
+        </div>
+    </footer>
 </body>
 
 </html>

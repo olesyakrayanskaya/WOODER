@@ -3,6 +3,13 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         speed: 1000,
-        infinite: true}
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+    }
     );
+
+    $('.slider').on('afterChange', function(event, slick, currentSlide){
+        $(".slider__number").text(currentSlide > 8 ? currentSlide + 1 : "0" + (currentSlide + 1));
+     });
 });
