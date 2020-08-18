@@ -1,0 +1,17 @@
+@mixin paragraph-text {
+    width: 356px;
+    height: 74px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: #464646;
+    font-family: "Proxima Nova";
+}
+
+@mixin H3-text {
+    font-size: 48px;
+    letter-spacing: 3px;
+    line-height: 100px;
+    color: #010101;
+    font-family: "Proxima Nova Bold";
+}
