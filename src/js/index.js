@@ -4,7 +4,8 @@ $(document).ready(function () {
         arrows: false,
         speed: 1000,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
+        variableWidth: true,
         infinite: true
     }
     );

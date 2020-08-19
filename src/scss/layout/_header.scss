@@ -1,29 +1,32 @@
 .header {
-    position: fixed;
     background-color: rgba($black, 0);
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 20px;
+    position: relative;
 
     &__container {
-        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        position: absolute;
+        left: 27vw;
+        top: 20px;
     }
 
     &__nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin-left: 70px;       
     }
 
     &__navitem {
@@ -33,12 +36,21 @@
         line-height: 27px;
         color: $white;
         font-family: "Proxima Nova Bold";
-        padding: 10px 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:nth-child(2) {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
     }
 
     &__info {
-        margin-right: 40px;
+        position: absolute;
+        right: 90px;
+        top: 30px;
     }
+
 }
 
 .menu {
@@ -46,6 +58,9 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 
     &__items {
         display: flex;
@@ -88,8 +103,13 @@
     -moz-appearance: none;
     appearance: none;
     padding-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 35px;
 
     &__opt {
         background-color: $black;
     }
+
 }
