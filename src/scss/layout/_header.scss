@@ -7,12 +7,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
     &__nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__navitem {
@@ -22,6 +33,11 @@
         line-height: 27px;
         color: $white;
         font-family: "Proxima Nova Bold";
+        padding: 10px 50px;
+    }
+
+    &__info {
+        margin-right: 40px;
     }
 }
 
@@ -71,6 +87,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    padding-right: 10px;
 
     &__opt {
         background-color: $black;
