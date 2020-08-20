@@ -44,6 +44,16 @@
         top: 41vh;
         right: 5vw;
         transform: rotate(90deg);
+
+        &::after {
+            content: "";
+            width: 51px;
+            height: 4px;
+            background-color: #bea67c;
+            position: absolute;
+            top: 4px;
+            right: -45vh;
+        }
     }
 
     &__inner {
