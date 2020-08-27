@@ -8,8 +8,8 @@
         width: 700px;
         height: 135px;
         position: absolute;
-        left: -200px;
-        bottom: 260px;
+        left: -300px;
+        bottom: 300px;
         z-index: 600;
         background-size: cover;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@
             width: 240px;
             height: 260px;
             position: absolute;
-            top: 500px;
+            top: 600px;
             right: 0px;
             z-index: 600;
             background-size: contain;
@@ -66,10 +66,10 @@
     &__item_left {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        margin-bottom: 280px;
-        margin-top: 160px;
+        margin-bottom: 250px;
+        margin-top: 150px;
         position: relative;
         flex-wrap: wrap;
 
@@ -81,7 +81,7 @@
     &__item_right {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: 200px;
         position: relative;
@@ -93,7 +93,7 @@
     }
 
     &__img {
-        width: 35vw;
+        width: 600px;
         height: auto;
         max-width: 630px;
     }
@@ -162,7 +162,7 @@
 .infobox__desc {
     @include paragraph-text;
     position: relative;
-    width: 25vw;
+    margin-top: 30px;
 }
 
 .infobox__desc.left {
@@ -226,10 +226,8 @@
 
 .infobox_left {
     text-align: left;
-    margin-right: 60px;
 }
 
 .infobox_right {
     text-align: right;
-    margin-left: 80px;
 }
