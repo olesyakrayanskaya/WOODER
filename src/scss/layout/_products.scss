@@ -1,0 +1,234 @@
+.products {
+    background: $white;
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item_left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 280px;
+        margin-top: 130px;
+        position: relative;
+        flex-wrap: wrap;
+
+        .products__img {
+            margin-left: 80px;
+        }
+
+        .products__number {
+            left: 0;
+        }
+    }
+
+    &__item_right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 200px;
+        position: relative;
+        flex-wrap: wrap;
+
+        .products__img {
+            margin-right: 80px;
+        }
+
+        .products__number {
+            right: 0;
+        }
+    }
+
+    &__img {
+        width: 50vw;
+        height: auto;
+        max-width: 630px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number {
+        font-size: 36px;
+        letter-spacing: 3px;
+        color: $black;
+        font-family: "Proxima Nova Bold";
+        position: absolute;
+        bottom: 0;
+
+        &::after {
+            content: "";
+            width: 4px;
+            height: 51px;
+            background-color: #a9946e;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+    }
+}
+
+.wrap {
+    max-width: 1226px;
+    margin: 0 auto;
+}
+
+.infobox__title {
+    @include H3-text;
+    position: relative;
+}
+
+.infobox__title.left {
+    &::before {
+        content: "";
+        width: 151px;
+        height: 2px;
+        background-color: $black;
+        position: absolute;
+        top: 26px;
+        left: -180px;
+    }
+}
+
+.infobox__title.right {
+    &::before {
+        content: "";
+        width: 151px;
+        height: 2px;
+        background-color: $black;
+        position: absolute;
+        top: 26px;
+        right: -180px;
+    }
+}
+
+.infobox__desc {
+    @include paragraph-text;
+    position: relative;
+}
+
+.infobox__desc.left {
+    &::before {
+        content: "";
+        width: 44px;
+        height: 4px;
+        background-color: #a9946e;
+        position: absolute;
+        top: 4px;
+        left: -72px;
+    }
+}
+
+.infobox__desc.right {
+    &::before {
+        content: "";
+        width: 44px;
+        height: 4px;
+        background-color: #a9946e;
+        position: absolute;
+        top: 4px;
+        right: -72px;
+    }
+}
+
+.infobox__btn {
+    width: 200px;
+    height: 30px;
+    background-color: inherit;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: $black;
+    font-family: "Proxima Nova Bold";
+    border: none;
+    text-align: left;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 2px;
+        background-color: #a9946e;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.infobox__btn.right {
+    align-self: flex-end;
+    text-align: right;
+
+    &::after {
+        left: 40px;
+    }
+}
+
+.infobox_left {
+    text-align: left;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 200px;
+        height: 280px;
+        position: absolute;
+        top: -330px;
+        left: -90px;
+        z-index: 600;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../src/assets/images/f.png);
+    }
+
+    &::after {
+        content: "";
+        width: 800px;
+        height: 130px;
+        position: absolute;
+        top: 35px;
+        left: 554px;
+        z-index: 600;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../src/assets/images/Furnit.png);
+    }
+}
+
+.infobox_right {
+    text-align: right;
+
+    &::before {
+        content: "";
+        width: 650px;
+        height: 150px;
+        position: absolute;
+        top: 115px;
+        left: -360px;
+        z-index: 600;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../src/assets/images/decor.png);
+    }
+
+    &::after {
+        content: "";
+        width: 250px;
+        height:280px;
+        position: absolute;
+        top: -200px;
+        left: 978px;
+        z-index: 600;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../src/assets/images/d.png);
+    }
+}
