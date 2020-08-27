@@ -1,11 +1,66 @@
 .products {
     background: $white;
     width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 55vw;
+        height: 10vw;
+        position: absolute;
+        left: 0;
+        bottom: 25%;
+        z-index: 600;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../src/assets/images/decor.png);
+    }
+
+    &::after {
+        content: "";
+        width: 30vw;
+        height: 10vw;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        z-index: 600;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url(../../src/assets/images/Furnit.png);
+    }
 
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 16vw;
+            height: 20vw;
+            position: absolute;
+            top: -5%;
+            left: 0;
+            z-index: 600;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../src/assets/images/f.png);
+        }
+
+        &::after {
+            content: "";
+            width: 20vw;
+            height: 28vw;
+            position: absolute;
+            top: 42%;
+            right: 0;
+            z-index: 600;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../src/assets/images/d.png);
+        }
     }
 
     &__item_left {
@@ -16,7 +71,7 @@
         margin-bottom: 280px;
         margin-top: 130px;
         position: relative;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
 
         .products__img {
             margin-left: 80px;
@@ -34,7 +89,7 @@
         align-items: center;
         margin-bottom: 200px;
         position: relative;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
 
         .products__img {
             margin-right: 80px;
@@ -87,26 +142,28 @@
 }
 
 .infobox__title.left {
+
     &::before {
         content: "";
-        width: 151px;
+        width: 8vw;
         height: 2px;
         background-color: $black;
         position: absolute;
-        top: 26px;
-        left: -180px;
+        top: 25px;
+        left: -10vw;
     }
 }
 
 .infobox__title.right {
+
     &::before {
         content: "";
-        width: 151px;
+        width: 8vw;
         height: 2px;
         background-color: $black;
         position: absolute;
-        top: 26px;
-        right: -180px;
+        top: 25px;
+        right: -10vw;
     }
 }
 
@@ -116,26 +173,28 @@
 }
 
 .infobox__desc.left {
+
     &::before {
         content: "";
-        width: 44px;
+        width: 2vw;
         height: 4px;
         background-color: #a9946e;
         position: absolute;
-        top: 4px;
-        left: -72px;
+        top: 5px;
+        left: -4vw;
     }
 }
 
 .infobox__desc.right {
+
     &::before {
         content: "";
-        width: 44px;
+        width: 2vw;
         height: 4px;
         background-color: #a9946e;
         position: absolute;
-        top: 4px;
-        right: -72px;
+        top: 5px;
+        right: -4vw;
     }
 }
 
@@ -174,61 +233,8 @@
 
 .infobox_left {
     text-align: left;
-    position: relative;
-
-    &::before {
-        content: "";
-        width: 200px;
-        height: 280px;
-        position: absolute;
-        top: -330px;
-        left: -90px;
-        z-index: 600;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../../src/assets/images/f.png);
-    }
-
-    &::after {
-        content: "";
-        width: 800px;
-        height: 130px;
-        position: absolute;
-        top: 35px;
-        left: 554px;
-        z-index: 600;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../../src/assets/images/Furnit.png);
-    }
 }
 
 .infobox_right {
     text-align: right;
-
-    &::before {
-        content: "";
-        width: 650px;
-        height: 150px;
-        position: absolute;
-        top: 115px;
-        left: -360px;
-        z-index: 600;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../../src/assets/images/decor.png);
-    }
-
-    &::after {
-        content: "";
-        width: 250px;
-        height:280px;
-        position: absolute;
-        top: -200px;
-        left: 978px;
-        z-index: 600;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../../src/assets/images/d.png);
-    }
 }
