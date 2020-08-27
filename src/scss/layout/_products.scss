@@ -5,24 +5,24 @@
 
     &::before {
         content: "";
-        width: 55vw;
-        height: 10vw;
+        width: 700px;
+        height: 135px;
         position: absolute;
-        left: 0;
-        bottom: 25%;
+        left: -200px;
+        bottom: 260px;
         z-index: 600;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(../../src/assets/images/decor.png);
+        background-image: url(../../src/assets/images/decor.png);        
     }
 
     &::after {
         content: "";
-        width: 30vw;
-        height: 10vw;
+        width: 1200px;
+        height: 130px;
         position: absolute;
-        top: 20%;
-        right: 0;
+        top: 260px;
+        right: -750px;
         z-index: 600;
         background-size: cover;
         background-repeat: no-repeat;
@@ -38,10 +38,10 @@
 
         &::before {
             content: "";
-            width: 16vw;
-            height: 20vw;
+            width: 190px;
+            height: 260px;
             position: absolute;
-            top: -5%;
+            top: -100px;
             left: 0;
             z-index: 600;
             background-size: contain;
@@ -51,11 +51,11 @@
 
         &::after {
             content: "";
-            width: 20vw;
-            height: 28vw;
+            width: 240px;
+            height: 260px;
             position: absolute;
-            top: 42%;
-            right: 0;
+            top: 500px;
+            right: 0px;
             z-index: 600;
             background-size: contain;
             background-repeat: no-repeat;
@@ -66,16 +66,12 @@
     &__item_left {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         margin-bottom: 280px;
-        margin-top: 130px;
+        margin-top: 160px;
         position: relative;
-        flex-wrap: nowrap;
-
-        .products__img {
-            margin-left: 80px;
-        }
+        flex-wrap: wrap;
 
         .products__number {
             left: 0;
@@ -85,15 +81,11 @@
     &__item_right {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         margin-bottom: 200px;
         position: relative;
-        flex-wrap: nowrap;
-
-        .products__img {
-            margin-right: 80px;
-        }
+        flex-wrap: wrap;
 
         .products__number {
             right: 0;
@@ -101,7 +93,7 @@
     }
 
     &__img {
-        width: 50vw;
+        width: 35vw;
         height: auto;
         max-width: 630px;
     }
@@ -145,12 +137,12 @@
 
     &::before {
         content: "";
-        width: 8vw;
+        width: 151px;
         height: 2px;
         background-color: $black;
         position: absolute;
         top: 25px;
-        left: -10vw;
+        left: -180px;
     }
 }
 
@@ -158,30 +150,31 @@
 
     &::before {
         content: "";
-        width: 8vw;
+        width: 151px;
         height: 2px;
         background-color: $black;
         position: absolute;
         top: 25px;
-        right: -10vw;
+        right: -180px;
     }
 }
 
 .infobox__desc {
     @include paragraph-text;
     position: relative;
+    width: 25vw;
 }
 
 .infobox__desc.left {
 
     &::before {
         content: "";
-        width: 2vw;
+        width: 44px;
         height: 4px;
         background-color: #a9946e;
         position: absolute;
         top: 5px;
-        left: -4vw;
+        left: -72px;
     }
 }
 
@@ -189,12 +182,12 @@
 
     &::before {
         content: "";
-        width: 2vw;
+        width: 44px;
         height: 4px;
         background-color: #a9946e;
         position: absolute;
         top: 5px;
-        right: -4vw;
+        right: -72px;
     }
 }
 
@@ -233,8 +226,10 @@
 
 .infobox_left {
     text-align: left;
+    margin-right: 60px;
 }
 
 .infobox_right {
     text-align: right;
+    margin-left: 80px;
 }
