@@ -1,0 +1,55 @@
+.quality {
+    width: 100%;
+    background-color: $white;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__title {
+        @include H3-text;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 44px;
+            height: 4px;
+            background-color: $beige;
+            position: absolute;
+            bottom: -20px;
+            right: calc(50% - 22px);
+        }
+    }
+
+    &__text {
+        @include paragraph-text;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    &__video {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item:nth-child(2) {
+        margin-left: -90px;
+        margin-right: -90px;
+    }
+}
+
+.video-block {
+
+    &__vid {
+        width: 300px;
+        height: 300px;
+        clip-path: circle(28% at 50% 50%);
+    }
+
+}
