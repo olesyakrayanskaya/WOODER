@@ -1,0 +1,44 @@
+.info-video {
+    position: relative;
+    height: 100vh;
+
+    &__video[poster] {
+        height: 100vh;
+    }
+
+    &__player {
+        width: 90vh;
+        height: 90vh;
+        position: absolute;
+        right: 5vw;
+        top: 5vh;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        top: 10vh;
+        left: 10%;
+        width: 80%;
+        height: 80vh;
+        border: 1px solid $beige;
+    }
+
+    &__title {
+        @include H3-text;
+        color: $beige;
+        max-width: 550px;
+    }
+
+    &__text {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 25px;
+        color: $white;
+        font-family: "Proxima Nova";
+        max-width: 505px;
+    }
+}
