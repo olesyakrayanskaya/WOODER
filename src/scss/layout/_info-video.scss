@@ -25,12 +25,34 @@
         width: 80%;
         height: 80vh;
         border: 1px solid $beige;
+        padding-left: 10%;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            width: 1px;
+            height: 151px;
+            background-color: $white;
+            position: absolute;
+            right: 10%;
+        }
     }
 
     &__title {
         @include H3-text;
         color: $beige;
         max-width: 550px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 151px;
+            height: 1px;
+            background-color: $white;
+            position: absolute;
+            top: 24px;
+            left: -180px;
+        }
     }
 
     &__text {
@@ -40,5 +62,61 @@
         color: $white;
         font-family: "Proxima Nova";
         max-width: 505px;
+        padding: 20px 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 44px;
+            height: 4px;
+            background-color: $beige;
+            position: absolute;
+            top: 28px;
+            left: -72px;
+        }
+
+    }
+
+    &__btn {
+        width: 300px;
+        height: 60px;
+        border: 1px solid $white;
+        background: transparent;
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 70px;
+        color: $white;
+        font-family: "Proxima Nova Bold";
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: rgba($white, 0.3);
+        }
+    }
+
+    &__play {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 4px;
+        margin-right: 20px;
+    }
+
+    &__triangle-play {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-left: 10px solid $white;
+        border-bottom: 7px solid transparent;
     }
 }
