@@ -1,0 +1,45 @@
+.about {
+    &__item_left{
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;  
+        align-items: center; 
+        padding-top: 140px;
+        padding-bottom: 110px;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 980px;
+            height: 120px;
+            background-image: url(../../src/assets/images/about-us.png);
+            background-size: cover;
+            position: absolute;
+            top: 35%;
+            left: -200px;
+        }
+
+        &::after {
+            content: "";
+            width: 340px;
+            height: 320px;
+            background-image: url(../../src/assets/images/A.png);
+            background-size: cover;
+            position: absolute;
+            top: -120px;
+            right: -100px;
+
+        }
+    }
+
+    &__img {
+        max-width: 586px;
+    }
+
+    &__text {
+        margin-left: 90px;
+    }
+}
